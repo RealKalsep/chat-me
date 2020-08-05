@@ -5,16 +5,8 @@
 </head>
 
 <body>
-<h1>Chat (still very new)</h1>
-
-<form action="processing.php" method="post">
-Write a message: <input type="text" name="body">
-<input type="submit">
-<br>
-
-<?php
-include("chat.txt");
-?>
+<h1>Welcome to Chat-Me!</h1>
+<p>If you are new to this, your ID doesn't exist yet.</p>
 
 </body>
 </html>

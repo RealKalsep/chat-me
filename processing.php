@@ -4,7 +4,7 @@
     <title>Chat-Me</title>
     <script>
     setTimeout(function () {
-        window.location.replace("index.php");
+        window.location.replace("chat.php");
     }, 1000);
     </script>
 </head>
