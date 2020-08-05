@@ -15,7 +15,7 @@
 <p>Processing...<p>
 <?php
 $chat = fopen("chat.txt", "a") or die("Something went wrong!");
-$body = htmlspecialchars($_POST["body"]);
+$body = (date("(Y/m/d H:i:s) ") . htmlspecialchars($_POST["body"]));
 fwrite($chat, $body);
 fwrite($chat, "<br>\n");
 ?>
