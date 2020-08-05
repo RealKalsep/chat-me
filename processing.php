@@ -2,6 +2,11 @@
 <html>
 <head>
     <title>Chat-Me</title>
+    <script>
+    setTimeout(function () {
+        window.location.replace("index.php");
+    }, 1000);
+    </script>
 </head>
 
 <body>
@@ -9,9 +14,10 @@
 
 <p>Processing...<p>
 <?php
-$chat = fopen("chat.txt", "w") or die("Something went wrong!");
-$body = $_POST["body"];
+$chat = fopen("chat.txt", "a") or die("Something went wrong!");
+$body = htmlspecialchars($_POST["body"]);
 fwrite($chat, $body);
+fwrite($chat, "<br>\n");
 ?>
 
 </body>
